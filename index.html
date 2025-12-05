@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Política de Privacidade - QuilombApp Play</title>
+
+    <meta name="description" content="Política de Privacidade do jogo QuilombApp Play." />
+    <meta name="author" content="Seu Nome ou Estúdio" />
+
+    <style>
+        :root {
+            --bg: #050608;
+            --bg-card: #101218;
+            --accent: #f5b234;
+            --accent-soft: rgba(245, 178, 52, 0.15);
+            --text: #f7f7f7;
+            --text-muted: #b0b3c0;
+            --border: #262938;
+            --max-width: 960px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: radial-gradient(circle at top, #151827, #050608 60%);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header {
+            border-bottom: 1px solid var(--border);
+            background: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            backdrop-filter: blur(10px);
+        }
+
+        .header-inner {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0.75rem 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .logo img {
+            width: 40px;
+            height: 40px;
+            border-radius: 12px;
+            object-fit: cover;
+            border: 2px solid var(--accent);
+        }
+
+        .logo-title {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-title span:first-child {
+            font-weight: 700;
+            letter-spacing: 0.03em;
+        }
+
+        .logo-title span:last-child {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+        }
+
+        .hero {
+            background: radial-gradient(circle at top, rgba(245,178,52,0.15), transparent 55%);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .hero-inner {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 2.5rem 1rem 1.5rem;
+            display: grid;
+            grid-template-columns: minmax(0, 2.2fr) minmax(0, 1.8fr);
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-size: clamp(1.8rem, 3vw, 2.3rem);
+            margin: 0 0 0.75rem;
+        }
+
+        .hero-text p {
+            margin: 0 0 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.25rem 0.6rem;
+            border-radius: 999px;
+            background: var(--accent-soft);
+            color: var(--accent);
+            font-size: 0.75rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .hero-badge span.icon {
+            width: 8px;
+            height: 8px;
+            border-radius: 999px;
+            background: var(--accent);
+        }
+
+        .hero-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-top: 0.6rem;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .hero-meta span {
+            padding: 0.1rem 0.6rem;
+            border-radius: 999px;
+            border: 1px solid var(--border);
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .hero-visual {
+            position: relative;
+        }
+
+        .hero-card {
+            border-radius: 20px;
+            background: radial-gradient(circle at top left, rgba(245,178,52,0.22), #0c0f18);
+            border: 1px solid var(--border);
+            box-shadow: 0 18px 55px rgba(0,0,0,0.65);
+            padding: 1rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-card img {
+            width: 100%;
+            border-radius: 14px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .hero-card-caption {
+            position: absolute;
+            inset: auto 0 0;
+            padding: 0.7rem 0.9rem;
+            background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+            font-size: 0.8rem;
+        }
+
+        .hero-card-caption strong {
+            display: block;
+            font-size: 0.85rem;
+        }
+
+        main {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 1.5rem 1rem 3rem;
+        }
+
+        .card {
+            background: rgba(10, 12, 20, 0.96);
+            border-radius: 18px;
+            border: 1px solid var(--border);
+            padding: 1.35rem 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .card h2 {
+            margin-top: 0;
+            font-size: 1.1rem;
+        }
+
+        .card h3 {
+            font-size: 1rem;
+            margin-top: 0.9rem;
+        }
+
+        .card p {
+            margin: 0.35rem 0;
+        }
+
+        .card ul {
+            margin: 0.35rem 0 0.35rem 1.2rem;
+            padding: 0;
+        }
+
+        .tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--text-muted);
+            margin-bottom: 0.6rem;
+        }
+
+        .tag-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 999px;
+            background: var(--accent);
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 1rem;
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            background: #050609;
+        }
+
+        @media (max-width: 768px) {
+            .hero-inner {
+                grid-template-columns: minmax(0, 1fr);
+                padding-top: 1.4rem;
+            }
+
+            .hero-visual {
+                order: -1;
+            }
+
+            .hero-card {
+                max-width: 360px;
+                margin: 0 auto;
+            }
+
+            .header-inner {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <div class="logo">
+                <!-- Troque o src abaixo pelo caminho da SUA logo no GitHub Pages -->
+                <img src="img/quilombapp-logo.png" alt="Logo QuilombApp Play" />
+                <div class="logo-title">
+                    <span>QuilombApp Play</span>
+                    <span>Jogo educacional sobre cultura quilombola</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <span class="icon"></span>
+                    <span>Política de Privacidade</span>
+                </div>
+                <h1>Como o QuilombApp Play cuida dos seus dados</h1>
+                <p>
+                    Esta página explica de forma clara como coletamos, utilizamos, armazenamos e protegemos 
+                    as informações dos usuários do jogo <strong>QuilombApp Play</strong>.
+                </p>
+                <p>
+                    Ao utilizar o jogo, você concorda com os termos desta Política de Privacidade. 
+                    Caso não concorde, recomendamos que interrompa o uso do aplicativo.
+                </p>
+                <div class="hero-meta">
+                    <span>Plataforma: Android</span>
+                    <span>Base legal: LGPD (Lei nº 13.709/2018)</span>
+                    <span>Última atualização: 04/12/2025</span>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-card">
+                    <!-- Troque o src abaixo pela arte/print do seu jogo -->
+                    <img src="img/quilombapp-hero.jpg" alt="Imagem do jogo QuilombApp Play" />
+                    <div class="hero-card-caption">
+                        <strong>Identidade visual do jogo</strong>
+                        <span>Use aqui um print ou arte oficial do QuilombApp Play.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section class="card">
+            <div class="tag">
+                <span class="tag-dot"></span>
+                <span>1. Quem somos</span>
+            </div>
+            <h2>1. Quem somos</h2>
+            <p>
+                O <strong>QuilombApp Play</strong> é um jogo educacional desenvolvido com o objetivo de 
+                divulgar e valorizar a cultura quilombola por meio de uma experiência interativa.
+            </p>
+            <p>
+                Esta Política de Privacidade é mantida pelo responsável pelo desenvolvimento do jogo 
+                (doravante chamado de “Desenvolvedor”).
+            </p>
+        </section>
+
+        <section class="card">
+            <div class="tag">
+                <span class="tag-dot"></span>
+                <span>2. Dados que coletamos</span>
+            </div>
+            <h2>2. Quais dados coletamos</h2>
+            <p>Ao utilizar o QuilombApp Play, podemos coletar os seguintes dados:</p>
+
+            <h3>2.1. Dados de conta</h3>
+            <ul>
+                <li><strong>E-mail</strong> (em contas com registro por e-mail e senha);</li>
+                <li><strong>Apelido (nickname)</strong> utilizado no jogo;</li>
+                <li><strong>Idade</strong> (informada no cadastro);</li>
+                <li><strong>ID de usuário</strong> gerado automaticamente pelo Firebase.</li>
+            </ul>
+
+            <h3>2.2. Dados de jogo</h3>
+            <ul>
+                <li>Quantidade de <strong>vidas</strong> e <strong>moedas</strong> disponíveis;</li>
+                <li>Itens e recursos obtidos (por exemplo: dicas, poderes, avatares desbloqueados);</li>
+                <li>Progresso no jogo (pontuações, desafios concluídos e estatísticas de uso dentro do app).</li>
+            </ul>
+
+            <h3>2.3. Dados técnicos</h3>
+            <p>
+                De forma automática, a infraestrutura que utilizamos (como o <strong>Firebase</strong>) 
+                pode coletar dados técnicos, por exemplo:
+            </p>
+            <ul>
+                <li>Modelo do dispositivo e sistema operacional;</li>
+                <li>Identificadores técnicos gerados pelo Firebase;</li>
+                <li>Informações de erro (logs) para fins de depuração e correção de bugs.</li>
+            </ul>
+
+            <p>
+                Não coletamos deliberadamente dados sensíveis (como origem racial ou étnica, religião, 
+                opinião política, saúde etc.) por meio do QuilombApp Play.
+            </p>
+        </section>
+
+        <section class="card">
+            <div class="tag">
+                <span class="tag-dot"></span>
+                <span>3. Como usamos seus dados</span>
+            </div>
+            <h2>3. Como utilizamos os dados</h2>
+            <p>Os dados coletados são utilizados para:</p>
+            <ul>
+                <li>Criar e gerenciar sua conta no jogo;</li>
+                <li>Sincronizar o progresso do jogo entre dispositivos (quando conectado à internet);</li>
+                <li>Exibir corretamente vidas, moedas, avatares e demais informações no menu;</li>
+                <li>Manter rankings, estatísticas internas e recursos de personalização do jogador;</li>
+                <li>Melhorar a estabilidade, desempenho e segurança do aplicativo.</li>
+            </ul>
+            <p>
+                Não utilizamos seus dados pessoais para fins de marketing, envio de spam ou venda de informações 
+                para terceiros.
+            </p>
+        </section>
+
+        <section class="card">
+            <div class="tag">
+                <span class="tag-dot"></span>
+                <span>4. Login, visitante e internet</span>
+            </div>
+            <h2>4. Login, modo visitante e conexão à internet</h2>
+
+            <h3>4.1. Login com e-mail e senha</h3>
+            <p>
+                Ao optar por criar uma conta com <strong>e-mail e senha</strong>, o jogo utiliza 
+                <strong>Firebase Authentication</strong> para autenticar sua identidade de forma segura.
+            </p>
+
+            <h3>4.2. Login como visitante</h3>
+            <p>
+                O jogo também oferece a opção de <strong>login como visitante</strong>, sem necessidade de e-mail. 
+                Nesse caso, um identificador anônimo é criado para salvar seu progresso.
+            </p>
+
+            <h3>4.3. Falta de conexão</h3>
+            <p>
+                Alguns recursos do jogo dependem de conexão com a internet (por exemplo, login, sincronização 
+                de progresso e carregamento de dados do jogador). 
+                Quando não há conexão, o jogo exibe mensagens informando a impossibilidade temporária de acessar 
+                esses recursos.
+            </p>
+        </section>
+
+        <section class="card">
+            <div class="tag">
+                <span class="tag-dot"></span>
+                <span>5. Bases legais e LGPD</span>
+            </div>
+            <h2>5. Base legal para tratamento de dados (LGPD)</h2>
+            <p>
+                O tratamento dos seus dados pessoais é realizado em conformidade com a 
+                <strong>Lei Geral de Proteção de Dados Pessoais (LGPD – Lei nº 13.709/2018)</strong>, 
+                principalmente com base em:
+            </p>
+            <ul>
+                <li><strong>Execução de contrato</strong>: para permitir o funcionamento do jogo e dos seus recursos;</li>
+                <li><strong>Consentimento</strong>: quando você aceita esta Política e utiliza o aplicativo;</li>
+                <li><strong>Legítimo interesse</strong>: para melhorar a experiência, corrigir erros e garantir segurança.</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <div class="tag">
+                <span class="tag-dot"></span>
+                <span>6. Compartilhamento de dados</span>
+            </div>
+            <h2>6. Compartilhamento de dados com terceiros</h2>
+            <p>
+                O QuilombApp Play não vende nem compartilha seus dados pessoais com terceiros para fins comerciais.
+            </p>
+            <p>
+                Contudo, utilizamos serviços de terceiros para hospedar e processar dados, como:
+            </p>
+            <ul>
+                <li><strong>Firebase Authentication</strong> – autenticação de usuários;</li>
+                <li><strong>Firebase Cloud Firestore</strong> – armazenamento seguro de dados de jogo.</li>
+            </ul>
+            <p>
+                Esses serviços são fornecidos pela <strong>Google LLC</strong> e possuem suas próprias 
+                políticas de privacidade, que recomendamos consultar.
+            </p>
+        </section>
+
+        <section class="card">
+            <div class="tag">
+                <span class="tag-dot"></span>
+                <span>7. Segurança</span>
+            </div>
+            <h2>7. Segurança dos dados</h2>
+            <p>
+                Adotamos boas práticas de segurança compatíveis com as ferramentas utilizadas (como o Firebase) 
+                para proteger seus dados contra acessos não autorizados, alteração ou destruição indevida.
+            </p>
+            <p>
+                Ainda assim, nenhum sistema é 100% seguro, e não é possível garantir proteção absoluta contra 
+                todos os tipos de ataque. Em caso de incidente grave envolvendo dados pessoais, buscaremos 
+                notificá-lo pelos meios disponíveis.
+            </p>
+        </section>
+
+        <section class="card">
+            <div class="tag">
+                <span class="tag-dot"></span>
+                <span>8. Crianças e adolescentes</span>
+            </div>
+            <h2>8. Crianças e adolescentes</h2>
+            <p>
+                O QuilombApp Play pode ser utilizado por pessoas de diferentes faixas etárias. 
+                Recomendamos que crianças e adolescentes utilizem o jogo com acompanhamento de responsáveis, 
+                especialmente no momento de criação de contas e fornecimento de dados.
+            </p>
+            <p>
+                Caso você seja pai, mãe ou responsável e acredite que possamos ter coletado dados pessoais de 
+                uma criança sem o devido consentimento, entre em contato conosco para solicitar revisão ou exclusão.
+            </p>
+        </section>
+
+        <section class="card">
+            <div class="tag">
+                <span class="tag-dot"></span>
+                <span>9. Seus direitos</span>
+            </div>
+            <h2>9. Seus direitos como titular de dados</h2>
+            <p>Nos termos da LGPD, você possui, entre outros, os seguintes direitos:</p>
+            <ul>
+                <li>Confirmar se tratamos dados pessoais a seu respeito;</li>
+                <li>Acessar os dados pessoais que mantemos sobre você;</li>
+                <li>Corrigir dados incompletos, inexatos ou desatualizados;</li>
+                <li>Solicitar anonimização, bloqueio ou eliminação de dados desnecessários;</li>
+                <li>Solicitar a exclusão da sua conta e dos dados associados ao jogo;</li>
+                <li>Revogar o consentimento, quando esta for a base legal utilizada.</li>
+            </ul>
+            <p>
+                Para exercer qualquer um desses direitos, entre em contato pelos canais descritos abaixo.
+            </p>
+        </section>
+
+        <section class="card">
+            <div class="tag">
+                <span class="tag-dot"></span>
+                <span>10. Contato</span>
+            </div>
+            <h2>10. Como falar conosco</h2>
+            <p>
+                Em caso de dúvidas sobre esta Política de Privacidade ou sobre o tratamento dos seus dados pessoais, 
+                você pode entrar em contato com o Desenvolvedor por:
+            </p>
+            <ul>
+                <li>E-mail: <a href="mailto:seuemail@exemplo.com">seuemail@exemplo.com</a></li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <div class="tag">
+                <span class="tag-dot"></span>
+                <span>11. Atualizações desta política</span>
+            </div>
+            <h2>11. Alterações nesta Política de Privacidade</h2>
+            <p>
+                Esta Política de Privacidade pode ser atualizada periodicamente para refletir melhorias no jogo 
+                ou mudanças legais. Sempre que forem feitas alterações relevantes, atualizaremos a data de 
+                “Última atualização” no topo desta página.
+            </p>
+            <p>
+                Recomendamos que você revise esta página ocasionalmente para manter-se informado sobre como 
+                seus dados são tratados.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        QuilombApp Play &mdash; Política de Privacidade • 2025
+    </footer>
+</body>
+</html>
